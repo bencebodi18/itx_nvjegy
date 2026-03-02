@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italinox | Digitális Névjegy</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f8fc;
+    color: #0A66C2;
+    text-align: center;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: linear-gradient(135deg, #0A66C2, #084c96);
+    padding: 40px 0;
+    animation: slideDown 1s ease-out;
+}
+
+header img {
+    width: 190px;
+    max-width: 80%;
+}
+
+/* ===== CARD ===== */
+
+.card {
+    background: white;
+    max-width: 380px;
+    margin: -30px auto 40px auto;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin: 6px 0;
+    color: #555;
+}
+
+/* ===== BUTTON ===== */
+
+.btn {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 14px 26px;
+    background: #0A66C2;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #084c96;
+    transform: translateY(-2px);
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://italinox.hu/app/uploads/2023/11/logo.svg" alt="Italinox logó">
+</header>
+
+<div class="card">
+    <h1>Bódi Bence</h1>
+    <p>Értékesítéső</p>
+    <p>+36 30 526 9282</p>
+    <p>bence.bodi@italinox.hu</p>
+
+    <a href="bence-bodi.vcf" class="btn" download>
+        📲 Névjegy mentése
+    </a>
+</div>
+
+</body>
+</html>
